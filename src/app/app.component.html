@@ -1,0 +1,14 @@
+<h1>{{title}}</h1>
+<div class="box">
+<input placeholder="enter first number" [(ngModel)]="firstNo" type="number" class="tb">
+<label  id="operator">{{op}}</label>
+<input placeholder="enter second number" [(ngModel)]="secondNo" type="number" class="tb">=
+<label class="tb">{{answer}}</label>
+<div>
+  <button (click)="click('+')">+</button>
+  <button (click)="click('-')">-</button>
+  <button (click)="click('*')">*</button>
+  <button (click)="click('/')">/</button>
+  <button (click)="click('c')">Clear</button>
+</div>
+</div>
